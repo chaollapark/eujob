@@ -14,10 +14,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="container">
-          <h1 className="title">Find Your Dream Remote Job</h1>
-          <p>Search 37,527 work from home jobs and get more job interviews</p>
+          <h1 className="title">EU Jobs</h1>
+          <p>Search jobs in Public Affaris, Goverment Affairs, Policy, and Public Relaions in Brussels</p>
           <div className="rating">
-            <span>⭐⭐⭐⭐⭐ Loved by 3,500 remote workers</span>
+            <span>The best job board in Brussels</span>
           </div>
           <div className="buttons">
             <button className="btn unlock">🔓 Unlock All Jobs</button>
