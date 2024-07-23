@@ -1,122 +1,128 @@
 .App {
-  text-align: center;
-  background-color: #1e1e1e;
-  color: #fff;
-  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.title {
-  font-size: 2.5em;
-  color: #ff66c4;
-}
-
-.rating {
-  margin: 10px 0;
-}
-
-.buttons {
-  margin: 20px 0;
-}
-
-.btn {
-  padding: 10px 20px;
-  margin: 5px;
-  border: none;
-  cursor: pointer;
-  font-size: 1em;
-}
-
-.unlock {
-  background-color: #8200ff;
-  color: #fff;
-}
-
-.receive {
-  background-color: #444;
-  color: #fff;
-}
-
-.filters, .sorting {
-  margin: 20px 0;
-}
-
-.filter-btn, .sort-btn {
-  background-color: #444;
-  color: #fff;
-  padding: 10px 20px;
-  margin: 5px;
-  border: none;
-  cursor: pointer;
-}
-
-.job-listing {
-  margin: 20px 0;
-}
-
-.job-card {
-  background-color: #333;
-  padding: 20px;
-  margin: 10px 0;
-  border-radius: 5px;
-  text-align: left;
-}
-
-.job-details h2 {
-  margin: 0;
-  font-size: 1.5em;
-}
-
-.job-details p {
-  margin: 5px 0;
-}
-
-.job-links a {
-  color: #ff66c4;
-  margin-right: 10px;
-}
-
-.time {
-  font-size: 0.9em;
-  color: #aaa;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px 20px;
+  background-color: #005ea5;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Header__logo {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Header__logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.Header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.Header__language, .Header__search {
+  margin-left: 20px;
+}
+
+.Header__search input {
+  padding: 5px;
+}
+
+.Header__search button {
+  padding: 5px;
+  margin-left: 5px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.HeroSection {
+  text-align: center;
+  padding: 50px;
+  background-color: #005ea5;
+  color: white;
+}
+
+.HeroSection h1 {
+  font-size: 2em;
+}
+
+.HeroSection p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.HeroSection .primary-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffdd00;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.SearchFilters {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.SearchFilters input {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.SearchFilters button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.JobListings {
+  padding: 20px;
+}
+
+.JobListings h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.JobCard {
+  background-color: white;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.JobCard h3 {
+  color: #005ea5;
+}
+
+.JobCard__links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.Footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #005ea5;
+  color: white;
 }
